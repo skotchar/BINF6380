@@ -1,6 +1,7 @@
 package Lab2;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Lab2 {
 	public static void main(String[] args) {
@@ -27,13 +28,17 @@ public class Lab2 {
         //Initialize score keeper and time
         int score = 0;
         long startTime = System.currentTimeMillis();
-        long timeElapsed = (System.currentTimeMillis() - startTime)/1000;
+        
+        System.out.println("Choose length of quiz in seconds: ");
+        
+        Scanner scan = new Scanner(System.in);
+        int quizLen = scan.nextInt()*1000;
         
         //while loop for quiz
-        while(timeElapsed < 30) {
+        while(System.currentTimeMillis() - startTime < quizLen) {
         	
         	//Create random number to get random amino acid
-    		Random random = new Random();
+    		Random random = new Random(); 
             int randomNumber = random.nextInt(shortName.length); // Generates a number between 1 and 20
             String question = fullName[randomNumber];
             String answer = shortName[randomNumber];
@@ -41,16 +46,24 @@ public class Lab2 {
             
         	//Ask Question
             System.out.println("What is the abbreviation for " + question + "?");
+            System.out.println("Enter quit to end quiz.");
+            
     		String aString = System.console().readLine().toUpperCase();
+    		
+            double timeElapsed = (System.currentTimeMillis() - startTime) / 1000.0;
+
     		
     		if (aString.equals(answer)) {
     			score++;
-    			System.out.println("right. Score:" + score + " seconds=" + (System.currentTimeMillis())/1000);
+    			System.out.println("right. Score:" + score + " seconds=" + timeElapsed);
     			
+    		} else if(aString.equals("QUIT")) {
+    			break;
     		} else {
     			System.out.println("WRONG should be " + answer);
-    			timeElapsed = 30;
+    			break;
     		}
+    		System.out.println();
     	    
         }
         
