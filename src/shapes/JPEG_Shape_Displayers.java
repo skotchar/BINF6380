@@ -24,7 +24,7 @@ public class JPEG_Shape_Displayers
 		
 		for( int x=1; x<= 3; x++)
 		{
-			Circle c = new Circle(20*x);
+			Circle c = new Circle(20*x); 
 			c.setColor(colors[x-1]);
 			list.add(c);
 		}

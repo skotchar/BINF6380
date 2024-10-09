@@ -54,7 +54,7 @@ public class myShape extends Shape {
         GeneralPath heart = new GeneralPath();
         double scale = size / 100.0;
         double centerX = width / 2;
-        double centerY = height / 2 + 20 * scale;
+        double centerY = height / 2 + 20 * scale; 
 
         // Starting point at the bottom of the heart
         heart.moveTo(centerX, centerY + 40 * scale);
