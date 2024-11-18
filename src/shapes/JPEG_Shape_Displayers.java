@@ -20,7 +20,7 @@ public class JPEG_Shape_Displayers
 	{
 		Color[] colors = {Color.BLACK, Color.GRAY, Color.GREEN, Color.RED, Color.BLUE}; 
 		
-		List<Shape> list = new ArrayList<>();
+		List<Shape> list = new ArrayList<>(); 
 		
 		for( int x=1; x<= 3; x++)
 		{

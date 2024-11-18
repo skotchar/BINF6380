@@ -26,7 +26,7 @@ public class Square extends Shape
 	public double getPerimiter()
 	{
 		return 4 * sideLength;
-	}
+	} 
 
 	@Override
 	public double getArea()

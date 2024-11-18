@@ -73,7 +73,7 @@ public class Triangle extends Shape
 	        
 	  
 	        // Set color for the triangle (black)
-	        g2d.setColor(this.getColor()); 
+	        g2d.setColor(this.getColor());  
 	        
 	        // Define the coordinates for the triangle
 	        int[] xPoints = {

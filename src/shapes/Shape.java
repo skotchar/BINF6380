@@ -25,7 +25,7 @@ public abstract class Shape implements Comparable<Shape>
 
 		// Set font and size
         Font font = new Font("Arial", Font.BOLD, 24);
-        g2d.setColor(Color.black);
+        g2d.setColor(Color.black); 
         g2d.setFont(font);
 
         // Get the FontMetrics object to calculate the position

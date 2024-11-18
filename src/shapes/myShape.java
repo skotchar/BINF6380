@@ -29,8 +29,8 @@ public class myShape extends Shape {
 
     @Override
     public String getAuthor() {
-        return "Saipriya Kotcharlakota";
-    }
+        return "Saipriya";
+    } 
 
     @Override
     public void renderAsJpeg(File fileToJpeg) throws Exception {
