@@ -29,7 +29,7 @@ public class myShape extends Shape {
 
     @Override
     public String getAuthor() {
-        return "Saipriya";
+        return "Saipriya";  
     } 
 
     @Override
